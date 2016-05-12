@@ -9,8 +9,8 @@
 @import Foundation;
 
 #import "SFLDataAccessObject.h"
+#import "SFLItem.h"
 
-@class SFLItem;
 
 @interface SFLDataAccessObject (Item)
 

@@ -21,6 +21,7 @@
 		9AB8D7D61CE52A8300D45CDB /* SFLContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7D51CE52A8300D45CDB /* SFLContentManager.m */; };
 		9AB8D7DA1CE52B1A00D45CDB /* SFLDataAccessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7D91CE52B1A00D45CDB /* SFLDataAccessObject.m */; };
 		9AB8D7DE1CE52B6900D45CDB /* SFLDataAccessObject+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7DD1CE52B6900D45CDB /* SFLDataAccessObject+Item.m */; };
+		9AB8D7E21CE5309000D45CDB /* SFLNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7E11CE5309000D45CDB /* SFLNetworkClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		9AB8D7D91CE52B1A00D45CDB /* SFLDataAccessObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLDataAccessObject.m; path = DTO/ContentManager/DataAccessObject/SFLDataAccessObject.m; sourceTree = "<group>"; };
 		9AB8D7DC1CE52B6900D45CDB /* SFLDataAccessObject+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SFLDataAccessObject+Item.h"; path = "DTO/ContentManager/DataAccessObject/ItemAccessObject/SFLDataAccessObject+Item.h"; sourceTree = "<group>"; };
 		9AB8D7DD1CE52B6900D45CDB /* SFLDataAccessObject+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SFLDataAccessObject+Item.m"; path = "DTO/ContentManager/DataAccessObject/ItemAccessObject/SFLDataAccessObject+Item.m"; sourceTree = "<group>"; };
+		9AB8D7E01CE5309000D45CDB /* SFLNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFLNetworkClient.h; path = DTO/ContentManager/NetworkClient/SFLNetworkClient.h; sourceTree = "<group>"; };
+		9AB8D7E11CE5309000D45CDB /* SFLNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLNetworkClient.m; path = DTO/ContentManager/NetworkClient/SFLNetworkClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 			children = (
 				9AB8D7D41CE52A8300D45CDB /* SFLContentManager.h */,
 				9AB8D7D51CE52A8300D45CDB /* SFLContentManager.m */,
+				9AB8D7DF1CE5306E00D45CDB /* NetworkClient */,
 				9AB8D7D71CE52B0300D45CDB /* DataAccessObject */,
 			);
 			name = ContentManager;
@@ -240,6 +244,15 @@
 				9AB8D7DD1CE52B6900D45CDB /* SFLDataAccessObject+Item.m */,
 			);
 			name = ItemAccessObject;
+			sourceTree = "<group>";
+		};
+		9AB8D7DF1CE5306E00D45CDB /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7E01CE5309000D45CDB /* SFLNetworkClient.h */,
+				9AB8D7E11CE5309000D45CDB /* SFLNetworkClient.m */,
+			);
+			name = NetworkClient;
 			sourceTree = "<group>";
 		};
 		DC5586B36452638BB2EA5DFC /* Frameworks */ = {
@@ -379,6 +392,7 @@
 				9AB8D7D01CE5295500D45CDB /* NSObject+ModelMapping.m in Sources */,
 				9AB8D7DE1CE52B6900D45CDB /* SFLDataAccessObject+Item.m in Sources */,
 				9AB8D7C11CE525C900D45CDB /* SFLRootViewController.m in Sources */,
+				9AB8D7E21CE5309000D45CDB /* SFLNetworkClient.m in Sources */,
 				9AB8D7C81CE5289800D45CDB /* SFLItem.m in Sources */,
 				9AB8D7DA1CE52B1A00D45CDB /* SFLDataAccessObject.m in Sources */,
 				9AB8D7A01CE51AD800D45CDB /* main.m in Sources */,

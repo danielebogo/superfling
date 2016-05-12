@@ -8,8 +8,14 @@
 
 @import Foundation;
 
+#import "SFLItem.h"
+
+
 @interface SFLContentManager : NSObject
 
 + (instancetype)newContentManagerWithNetworkBaseURLString:(NSString *)baseURLString;
+
+- (NSArray <SFLItem *>*)savedItems;
+- (void)fetchSaveItemsWithCompletionBlock:(void(^)(BOOL success, NSArray <SFLItem *>*items, NSError *error))completionBlock;
 
 @end

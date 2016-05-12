@@ -8,8 +8,6 @@
 
 #import "SFLDataAccessObject+Item.h"
 
-#import "SFLItem.h"
-
 #import <MagicalRecord/MagicalRecord.h>
 
 
@@ -29,7 +27,7 @@
     
     dispatch_group_enter(serviceGroup);
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
-        [items enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [[items copy] enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             SFLItem *item = [SFLItem MR_createEntityInContext:localContext];
             [item sfl_setData:obj];
         }];
