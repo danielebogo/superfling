@@ -16,6 +16,7 @@
 + (instancetype)newContentManagerWithNetworkBaseURLString:(NSString *)baseURLString;
 
 - (NSArray <SFLItem *>*)savedItems;
-- (void)fetchSaveItemsWithCompletionBlock:(void(^)(BOOL success, NSArray <SFLItem *>*items, NSError *error))completionBlock;
+- (void)fetchSaveItemsWithCompletionBlock:(void(^)(BOOL success, NSArray <SFLItem *>*items, NSError *error))completionBlock
+                            forcingReload:(BOOL)reload;
 
 @end

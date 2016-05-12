@@ -22,6 +22,13 @@
 		9AB8D7DA1CE52B1A00D45CDB /* SFLDataAccessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7D91CE52B1A00D45CDB /* SFLDataAccessObject.m */; };
 		9AB8D7DE1CE52B6900D45CDB /* SFLDataAccessObject+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7DD1CE52B6900D45CDB /* SFLDataAccessObject+Item.m */; };
 		9AB8D7E21CE5309000D45CDB /* SFLNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7E11CE5309000D45CDB /* SFLNetworkClient.m */; };
+		9AB8D7E71CE53ED900D45CDB /* SFLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7E51CE53ED900D45CDB /* SFLTableViewCell.m */; };
+		9AB8D7E81CE53ED900D45CDB /* SFLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8D7E61CE53ED900D45CDB /* SFLTableViewCell.xib */; };
+		9AB8D7ED1CE5407400D45CDB /* SFLTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7EC1CE5407400D45CDB /* SFLTableViewDatasource.m */; };
+		9AB8D7F81CE54A5600D45CDB /* DBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7F11CE54A5600D45CDB /* DBImage.m */; };
+		9AB8D7F91CE54A5600D45CDB /* DBImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7F31CE54A5600D45CDB /* DBImageRequest.m */; };
+		9AB8D7FA1CE54A5600D45CDB /* DBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7F51CE54A5600D45CDB /* DBImageView.m */; };
+		9AB8D7FB1CE54A5600D45CDB /* DBImageViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D7F71CE54A5600D45CDB /* DBImageViewCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +60,19 @@
 		9AB8D7DD1CE52B6900D45CDB /* SFLDataAccessObject+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SFLDataAccessObject+Item.m"; path = "DTO/ContentManager/DataAccessObject/ItemAccessObject/SFLDataAccessObject+Item.m"; sourceTree = "<group>"; };
 		9AB8D7E01CE5309000D45CDB /* SFLNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFLNetworkClient.h; path = DTO/ContentManager/NetworkClient/SFLNetworkClient.h; sourceTree = "<group>"; };
 		9AB8D7E11CE5309000D45CDB /* SFLNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLNetworkClient.m; path = DTO/ContentManager/NetworkClient/SFLNetworkClient.m; sourceTree = "<group>"; };
+		9AB8D7E41CE53ED900D45CDB /* SFLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFLTableViewCell.h; path = Classes/ViewController/RootViewController/ItemCell/SFLTableViewCell.h; sourceTree = "<group>"; };
+		9AB8D7E51CE53ED900D45CDB /* SFLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLTableViewCell.m; path = Classes/ViewController/RootViewController/ItemCell/SFLTableViewCell.m; sourceTree = "<group>"; };
+		9AB8D7E61CE53ED900D45CDB /* SFLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SFLTableViewCell.xib; path = Classes/ViewController/RootViewController/ItemCell/SFLTableViewCell.xib; sourceTree = "<group>"; };
+		9AB8D7EB1CE5407400D45CDB /* SFLTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFLTableViewDatasource.h; path = Classes/ViewController/RootViewController/DataSource/SFLTableViewDatasource.h; sourceTree = "<group>"; };
+		9AB8D7EC1CE5407400D45CDB /* SFLTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLTableViewDatasource.m; path = Classes/ViewController/RootViewController/DataSource/SFLTableViewDatasource.m; sourceTree = "<group>"; };
+		9AB8D7F01CE54A5600D45CDB /* DBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBImage.h; sourceTree = "<group>"; };
+		9AB8D7F11CE54A5600D45CDB /* DBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBImage.m; sourceTree = "<group>"; };
+		9AB8D7F21CE54A5600D45CDB /* DBImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBImageRequest.h; sourceTree = "<group>"; };
+		9AB8D7F31CE54A5600D45CDB /* DBImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBImageRequest.m; sourceTree = "<group>"; };
+		9AB8D7F41CE54A5600D45CDB /* DBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBImageView.h; sourceTree = "<group>"; };
+		9AB8D7F51CE54A5600D45CDB /* DBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBImageView.m; sourceTree = "<group>"; };
+		9AB8D7F61CE54A5600D45CDB /* DBImageViewCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBImageViewCache.h; sourceTree = "<group>"; };
+		9AB8D7F71CE54A5600D45CDB /* DBImageViewCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBImageViewCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +166,7 @@
 		9AB8D7BB1CE5254A00D45CDB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9AB8D7EE1CE54A5500D45CDB /* Personal Library */,
 				9AB8D7C91CE5291400D45CDB /* Categories */,
 				9AB8D7BC1CE5259000D45CDB /* ViewController */,
 			);
@@ -163,6 +184,7 @@
 		9AB8D7BD1CE5259900D45CDB /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9AB8D7E91CE5404B00D45CDB /* TableView */,
 				9AB8D7BE1CE525C900D45CDB /* SFLRootViewController.h */,
 				9AB8D7BF1CE525C900D45CDB /* SFLRootViewController.m */,
 				9AB8D7C01CE525C900D45CDB /* SFLRootViewController.xib */,
@@ -255,6 +277,58 @@
 			name = NetworkClient;
 			sourceTree = "<group>";
 		};
+		9AB8D7E31CE53EB600D45CDB /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7E41CE53ED900D45CDB /* SFLTableViewCell.h */,
+				9AB8D7E51CE53ED900D45CDB /* SFLTableViewCell.m */,
+				9AB8D7E61CE53ED900D45CDB /* SFLTableViewCell.xib */,
+			);
+			name = ItemCell;
+			sourceTree = "<group>";
+		};
+		9AB8D7E91CE5404B00D45CDB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7EA1CE5405300D45CDB /* DataSource */,
+				9AB8D7E31CE53EB600D45CDB /* ItemCell */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		9AB8D7EA1CE5405300D45CDB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7EB1CE5407400D45CDB /* SFLTableViewDatasource.h */,
+				9AB8D7EC1CE5407400D45CDB /* SFLTableViewDatasource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		9AB8D7EE1CE54A5500D45CDB /* Personal Library */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7EF1CE54A5600D45CDB /* DBImageView */,
+			);
+			name = "Personal Library";
+			path = "Classes/Personal Library";
+			sourceTree = "<group>";
+		};
+		9AB8D7EF1CE54A5600D45CDB /* DBImageView */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D7F01CE54A5600D45CDB /* DBImage.h */,
+				9AB8D7F11CE54A5600D45CDB /* DBImage.m */,
+				9AB8D7F21CE54A5600D45CDB /* DBImageRequest.h */,
+				9AB8D7F31CE54A5600D45CDB /* DBImageRequest.m */,
+				9AB8D7F41CE54A5600D45CDB /* DBImageView.h */,
+				9AB8D7F51CE54A5600D45CDB /* DBImageView.m */,
+				9AB8D7F61CE54A5600D45CDB /* DBImageViewCache.h */,
+				9AB8D7F71CE54A5600D45CDB /* DBImageViewCache.m */,
+			);
+			path = DBImageView;
+			sourceTree = "<group>";
+		};
 		DC5586B36452638BB2EA5DFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB8D7C41CE5274300D45CDB /* LaunchScreen.storyboard in Resources */,
+				9AB8D7E81CE53ED900D45CDB /* SFLTableViewCell.xib in Resources */,
 				9AB8D7C21CE525C900D45CDB /* SFLRootViewController.xib in Resources */,
 				9AB8D7AE1CE51AD800D45CDB /* Assets.xcassets in Resources */,
 			);
@@ -386,13 +461,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB8D7D11CE5295500D45CDB /* NSObject+ObjectValidation.m in Sources */,
+				9AB8D7E71CE53ED900D45CDB /* SFLTableViewCell.m in Sources */,
 				9AB8D7D61CE52A8300D45CDB /* SFLContentManager.m in Sources */,
+				9AB8D7F91CE54A5600D45CDB /* DBImageRequest.m in Sources */,
 				9AB8D7A31CE51AD800D45CDB /* AppDelegate.m in Sources */,
 				9AB8D7AC1CE51AD800D45CDB /* superfling.xcdatamodeld in Sources */,
+				9AB8D7FB1CE54A5600D45CDB /* DBImageViewCache.m in Sources */,
 				9AB8D7D01CE5295500D45CDB /* NSObject+ModelMapping.m in Sources */,
 				9AB8D7DE1CE52B6900D45CDB /* SFLDataAccessObject+Item.m in Sources */,
+				9AB8D7F81CE54A5600D45CDB /* DBImage.m in Sources */,
+				9AB8D7ED1CE5407400D45CDB /* SFLTableViewDatasource.m in Sources */,
 				9AB8D7C11CE525C900D45CDB /* SFLRootViewController.m in Sources */,
 				9AB8D7E21CE5309000D45CDB /* SFLNetworkClient.m in Sources */,
+				9AB8D7FA1CE54A5600D45CDB /* DBImageView.m in Sources */,
 				9AB8D7C81CE5289800D45CDB /* SFLItem.m in Sources */,
 				9AB8D7DA1CE52B1A00D45CDB /* SFLDataAccessObject.m in Sources */,
 				9AB8D7A01CE51AD800D45CDB /* main.m in Sources */,

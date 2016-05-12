@@ -39,10 +39,11 @@
 }
 
 - (void)fetchSaveItemsWithCompletionBlock:(void(^)(BOOL success, NSArray <SFLItem *>*items, NSError *error))completionBlock
+                            forcingReload:(BOOL)reload
 {
     NSArray <SFLItem *>*items = [self savedItems];
     
-    if ([items sfl_isValidObject] && items.count > 0) {
+    if (([items sfl_isValidObject] && items.count > 0) && !reload) {
         completionBlock(YES, items, nil);
     } else {
         __weak typeof(self)weakSelf = self;

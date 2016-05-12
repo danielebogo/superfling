@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFLRootViewController">
             <connections>
+                <outlet property="activityIndicator" destination="3wE-JN-IfB" id="q1s-FE-8uP"/>
                 <outlet property="tableView" destination="piY-8f-8cS" id="5nB-cZ-9cY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -16,14 +17,20 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="piY-8f-8cS">
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-JN-IfB">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="piY-8f-8cS">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="piY-8f-8cS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="54Q-LB-RTM"/>
+                <constraint firstItem="3wE-JN-IfB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BSq-fr-HCB"/>
+                <constraint firstItem="3wE-JN-IfB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c55-oF-q9f"/>
                 <constraint firstAttribute="bottom" secondItem="piY-8f-8cS" secondAttribute="bottom" id="oZo-cQ-OEj"/>
                 <constraint firstItem="piY-8f-8cS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pWZ-QF-ISW"/>
                 <constraint firstAttribute="trailing" secondItem="piY-8f-8cS" secondAttribute="trailing" id="thB-8l-5Jt"/>

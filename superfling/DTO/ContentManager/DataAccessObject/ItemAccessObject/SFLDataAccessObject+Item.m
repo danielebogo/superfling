@@ -15,7 +15,7 @@
 
 - (NSArray <SFLItem *>*)sfl_fetchSavedItems
 {
-    return [SFLItem MR_findAllInContext:[NSManagedObjectContext MR_defaultContext]];
+    return [SFLItem MR_findAllSortedBy:@"itemId" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext]];
 }
 
 - (void)sfl_createEntitiesFromArray:(NSArray <NSDictionary *>*)items
@@ -28,7 +28,12 @@
     dispatch_group_enter(serviceGroup);
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
         [[items copy] enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            SFLItem *item = [SFLItem MR_createEntityInContext:localContext];
+            SFLItem *item = [SFLItem MR_findFirstByAttribute:@"itemId" withValue:obj[@"ID"] inContext:localContext];
+            
+            if (!item) {
+                item = [SFLItem MR_createEntityInContext:localContext];
+            }
+            
             [item sfl_setData:obj];
         }];
         

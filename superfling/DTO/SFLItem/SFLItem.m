@@ -22,11 +22,11 @@
 
 + (NSDictionary *)sfl_objectMapping
 {
-    return @{ @"ID":@"itemId",
-              @"ImageID":@"imageId",
-              @"Title":@"title",
-              @"UserID":@"userId",
-              @"UserName":@"userName" };
+    return @{ @"itemId":@"ID",
+              @"imageId":@"ImageID",
+              @"title":@"Title",
+              @"userId":@"UserID",
+              @"userName":@"UserName" };
 }
 
 
