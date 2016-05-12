@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SFLRootViewController.h
 //  superfling
 //
 //  Created by Daniele Bogo on 12/05/2016.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface SFLRootViewController : UIViewController
 
 @end
-

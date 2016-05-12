@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "SFLRootViewController.h"
+
 #import <MagicalRecord/MagicalRecord.h>
 
 
@@ -21,6 +23,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"superfling"];
+    
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[SFLRootViewController new]];
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
