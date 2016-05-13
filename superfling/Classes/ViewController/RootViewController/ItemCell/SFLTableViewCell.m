@@ -7,14 +7,12 @@
 //
 
 #import "SFLTableViewCell.h"
-#import "DBImageView.h"
 
 
 @interface SFLTableViewCell ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
-@property (weak, nonatomic) IBOutlet DBImageView *backgroundImageView;
 
 
 @end
@@ -30,6 +28,8 @@
 {
     [super awakeFromNib];
     // Initialization code
+    
+    self.backgroundImageView.clipsToBounds = YES;
 }
 
 
@@ -39,11 +39,6 @@
 {
     self.titleLabel.text = [title copy];
     self.usernameLabel.text = [userName copy];
-}
-
-- (void)setImageURL:(NSString *)imageURL
-{
-    [self.backgroundImageView setImageWithPath:[imageURL copy]];
 }
 
 

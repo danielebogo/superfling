@@ -6,5 +6,6 @@
 target 'superfling' do
 
 pod 'MagicalRecord', '~> 2.3'
+pod 'SDWebImage', '~> 3.7'
 
 end

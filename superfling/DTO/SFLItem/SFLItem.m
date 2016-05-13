@@ -34,7 +34,7 @@
 
 - (nullable NSString *)imagePath
 {
-    return [NSString stringWithFormat:@"http://challenge.superfling.com/%@", self.imageId.stringValue];
+    return [NSString stringWithFormat:@"http://challenge.superfling.com/photos/%@", self.imageId.stringValue];
 }
 
 @end

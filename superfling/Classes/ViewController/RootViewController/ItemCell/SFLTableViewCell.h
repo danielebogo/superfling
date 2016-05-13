@@ -10,9 +10,11 @@
 
 @interface SFLTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 + (NSString *)cellIdentifier;
 
 - (void)setTitle:(NSString *)title userName:(NSString *)userName;
-- (void)setImageURL:(NSString *)imageURL;
+
 
 @end
