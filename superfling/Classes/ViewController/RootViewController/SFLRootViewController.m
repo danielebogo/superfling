@@ -93,18 +93,13 @@
                 [UIView animateWithDuration:.3 animations:^{
                     strongSelf.tableView.alpha = 1.0;
                 }];
-                
-                NSLog(@"Items count %li", weakSelf.dataSource.items.count);
             });
             
         } else {
-            NSLog(@"Error %@", error);
             [weakSelf.activityIndicator stopAnimating];
             [weakSelf.refreshControl endRefreshing];
         }
     } forcingReload:forcingReload];
-    
-    NSLog(@"Items count %li", self.dataSource.items.count);
 }
 
 - (void)sfl_reloadData
